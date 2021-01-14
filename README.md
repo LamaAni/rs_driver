@@ -40,7 +40,7 @@
 #### 2.1.1 Install dependencies in Ubuntu
 
 ```sh
-sudo apt-get install libboost-dev libpcap-dev libpcl-dev libeigen3-dev
+sudo apt-get install libboost-all-dev libpcap-dev libpcl-dev libeigen3-dev
 ```
 
 #### 2.1.2 Install dependencies in Windows

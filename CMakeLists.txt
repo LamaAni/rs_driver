@@ -94,6 +94,7 @@ if(WIN32)
   include_directories(${PCAP_INCLUDE_DIR})
   list(APPEND EXTERNAL_LIBS ${PCAP_LIBRARY})
 else()
+  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
   list(APPEND EXTERNAL_LIBS pcap)
 endif(WIN32)
 
