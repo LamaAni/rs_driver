@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 echo "Login to user"
 sudo bash -c "Logged in" || exit $?
 
