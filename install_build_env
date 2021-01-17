@@ -1,7 +1,4 @@
 #!/bin/bash
-echo "Login to user"
-sudo bash -c "Logged in" || exit $?
-
 echo "Installing dependencies"
 sudo apt-get install g++ cmake libboost-all-dev libpcap-dev || exit $?
 
