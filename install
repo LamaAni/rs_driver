@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Running cmake"
+mkdir build &&
+    cd build || exit $?
+
+cmake -DCOMPILE_DEMOS=ON -DCOMPILE_TOOLS=ON .. || exit $?
+
+make -j4 || exit $?
+
+make install

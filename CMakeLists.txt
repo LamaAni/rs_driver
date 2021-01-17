@@ -94,6 +94,8 @@ if(WIN32)
   include_directories(${PCAP_INCLUDE_DIR})
   list(APPEND EXTERNAL_LIBS ${PCAP_LIBRARY})
 else()
+  # Main-fix: Change made to allow for pthreading in newer systems, 
+  # in order to support ubuntu:18.04 and up.
   SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
   list(APPEND EXTERNAL_LIBS pcap)
 endif(WIN32)
