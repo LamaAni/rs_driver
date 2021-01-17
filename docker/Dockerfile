@@ -6,5 +6,5 @@ RUN apt-get update && \
 
 COPY ./* /source/
 
-# User root
-RUN bash -c "cd /source/install && bash /source/install"
+# # User root
+# RUN bash -c "cd /source/install && bash /source/install"
